@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录框</title>
+</head>
+<body>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+			list-style: none;
+		}
+		h1 span{
+			font-family: "Brush Script Std";
+		}
+		body,html{
+			height: 100%;
+		}
+		#content{
+			height: 100%;
+			position: relative;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			/*background: rgba(0,0,0,0.5);*/
+		    background: url(images/background.png);
+			color: rgb(98,94,91);		    
+		}
+
+		#content .panel{
+		    /*width: 480px;*/
+		    text-align: center;
+		    position: relative;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50% ,-50%);
+		}
+		#content form{
+			background: #eee;
+		    width: 260px;
+		    height: 260px;
+			border-radius: 5px;
+			border:1px solid #fff;
+			border-bottom: none;
+			margin:35px auto;
+			padding: 30px;
+		}
+/*		#content form .cc-item{
+		    /*margin: 20px 0;*/
+		    width: 100%;
+		    height: 100%;
+		    display: flex;
+/*    flex-flow: column nowrap;
+    justify-content: space-between;*/
+}
+		/*}*/*/
+/*		#content form input[type=text],
+		#content form input[type=password]
+		{
+			width: 190px;
+			height:40px;
+			background: #e1dcd8;
+			padding: 0 35px;
+			border-radius: 5px;
+
+		}*/
+
+
+
+#content form ul{
+	width: 100%;
+	height:100%;
+	border-left: 1px solid red;
+	    display: flex;
+    /* flex-flow: wrap; */
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+#content form div{
+	    width: 260px;
+    height: 40px;
+    background: #e1dcd8;
+    color: rgb(98,94,91);
+    box-shadow: inset 0px 2px 5px #aaaaaa;
+    border-radius: 5px;
+    position: relative;
+}
+#content form input[type=text],
+#content form input[type=password],
+#content form input[type=submit]{
+	height: 40px;
+    width: 190px;
+    padding: 0 35px;
+    border: none;
+    background: #e1dcd8;
+    color: rgb(98,94,91);
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.7), inset 0px 2px 5px #aaaaaa;
+    border-radius: 5px;
+}
+}
+	</style>
+	<div id="content">
+		<div class="panel">
+			<h1>login to <span>love.ly</span></h1>
+			<div class="ct">
+				<form action="">
+					<ul>
+						<li>
+							<div class="text">
+								<span class="login"></span>
+								<input type="text" name="username" placeholder="username">
+							</div>
+						</li>
+						<li>
+							<div class="text">
+								<span class="login"></span>
+								<input type="password" name="password" placeholder="········">
+							</div>
+						</li>
+						<li>
+	
+								<label for="">
+								<span class="login"></span>
+								<input type="checkbox" name="checkbox" value="">remember me</label>
+							
+						</li>
+						<li>
+							<p>forget username or password?</p>
+						</li>
+						<li>
+							<div class="text">
+								<input type="submit">
+							</div>
+						</li>
+
+					</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- <div class="cc-item">
+						<label for="" class="icon icon-login"></label><input type="text" name="username" placeholder="IconDeposit">
+					</div>
+					<div class="cc-item">
+						<label for="" class="icon icon-login"></label><input type="password" name="password" placeholder="•••••••••••" required>
+					</div>
+					<div class="cc-item">
+						<input type="checkbox" name="checkbox" value="">Remember Me
+					</div>
+					<p>forgot username or password?</p>
+					<div class="cc-item">
+						<input type="submit" value="login">
+					</div> -->
+				</form>
+			</div>
+			<div class="descript">
+				<p>love.ly Personal Blog.psd Template 
+					<a href="">Copyright ©2012 Matt Gentile</a>
+				</p>
+				<p>
+					<a href="">Love.ly Home</a>
+					<span>|</span>
+					<a href="">Bolg </a>
+					<span>|</span>
+					<a href="">Work</a>
+					<span>|</span>
+					<a href="">Terms of Use</a>
+					<span>|</span>
+					<a href="">Contact Me</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

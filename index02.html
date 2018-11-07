@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录框demo</title>
+	<style>
+		@font-face {
+	font-family: 'iconfont';
+	src: url('//at.alicdn.com/t/font_1463147324_946932.eot'); /* IE9*/
+	src: url('//at.alicdn.com/t/font_1463147324_946932.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('http://at.alicdn.com/t/font_1463147324_946932.woff') format('woff'), /* chrome、firefox */
+	url('http://at.alicdn.com/t/font_1463147324_946932.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('//at.alicdn.com/t/font_1463147324_946932.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+*{margin: 0;padding: 0}
+li{list-style: none;}
+form a{text-decoration: none;}
+html,body {
+	background: url(./images/background.png);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+.wrap{
+	text-align: center;
+}
+.header span{
+	font-size: 30px;
+	font-family: "Brush Script Std";
+}
+form{
+	background: url(./images/input-bg.png);
+	width: 260px;
+	height: 260px;
+	margin:35px auto;
+	padding: 30px;
+	border-radius: 3px;
+}
+form ul{
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between; 
+}
+ul li div{
+	width: 260px;
+	height: 40px;
+	background: #e1dcd8;
+	color: red;
+	border-radius: 5px;
+	position: relative;
+}
+ul li .yonghu{
+	font-family: iconfont;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+
+}
+ul li .mima{
+	font-family: iconfont;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+ul li div input{
+	height: 40px;
+	width: 190px;
+	padding: 0 35px;
+	border-radius: 5px;
+}
+ul li input:focus{
+	outline: none;
+	background: #f5f2ef;
+}
+ul .remember{
+	font-size: 14px;
+	font-family: 微软雅黑;
+	font-weight: bold;
+	color: rgb(98,94,91);
+	position: relative;
+}
+ul .remember input[type*="checkbox"]{
+	width: 20px;
+	height: 20px;
+	vertical-align: super;
+	margin-right: 12px;
+	visibility: hidden;
+
+}
+.remember label{
+	cursor: pointer;
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	top: 7px;
+	left: 0;
+	background: #eee;
+	border:1px solid pink;
+	border-radius:4px;
+}
+.remember label:after{
+	opacity: 0.4;
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 4px;
+	border: 3px solid red;
+	border-top:none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+
+.remember label:hover::after{
+	opacity: .7;
+}
+.remember input[type=checkbox]:checked + label:after {
+	opacity: 1;
+	border-color: blue;
+}
+ul li input[type*="button"]{
+	width: 100%;
+	height:40px;
+	color: red;
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">login <span>love.ly</span></div>
+		<form action="">
+			<ul>
+				<li>
+					<div class="text">
+						<span class="yonghu">&#xe600;</span>
+						<input type="text" placeholder="username">
+					</div>
+				</li>
+				<li>
+					<div class="password">
+						<span class="mima">&#xe600;</span>
+						<input type="password" placeholder="password">
+					</div>
+				</li>
+				<li class="remember">
+						<input type="checkbox">
+						<label for="checkbox"></label>remmeber me
+				</li>
+				<li><a href="">
+					FORGET username or password？
+				</a></li>
+				<li>
+						<input type="submit" value="login">
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>
